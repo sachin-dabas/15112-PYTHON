@@ -1,10 +1,16 @@
-a = [1,2,3]
-b = [4,5,6]
+class Voxel:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+        self.c = 7
 
-def f(a,b):
-    return (a,b)
+    def sum(self):
+        return self.a + self.b + self.c
 
+    def printed(self):
+        print("hello")
 
-x = f(a,b)
-
-print(x[1])
+v = Voxel(1,2)
+result = v.sum()
+print("result...",result)
+print(v.printed())
