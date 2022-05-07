@@ -40,7 +40,8 @@ def fabricYards(inches):
         return (inches//36) + 1
  
 def fabricExcess(inches):
-    return 42
+    # Total yards in inches - desired yards
+    return (fabricYards(inches)*36) - inches 
 
 def isEvenPositiveInt(x):
     return 42
