@@ -44,7 +44,9 @@ def fabricExcess(inches):
     return (fabricYards(inches)*36) - inches 
 
 def isEvenPositiveInt(x):
-    return 42
+    if (type(x) != int) or (x < 1) or (x%2 == 1):
+        return False
+    return True    
 
 def nthFibonacciNumber(n):
     return 42
@@ -218,6 +220,7 @@ def testAll():
 
 def main():
     cs112_f21_week1_linter.lint()
+    # print(isEvenPositiveInt(1.2)) 
     testAll()
 
 if __name__ == '__main__':
