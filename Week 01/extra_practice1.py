@@ -49,7 +49,10 @@ def isEvenPositiveInt(x):
     return True    
 
 def nthFibonacciNumber(n):
-    return 42
+    result = int(((1+math.sqrt(5))**n - (1-math.sqrt(5))**n)/
+                (2**n) * (math.sqrt(5)))
+    print("nth fibonacci number is...",result) 
+    return result
 
 def isLegalTriangle(s1,s2,s3):
     return 42
